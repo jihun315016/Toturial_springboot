@@ -20,7 +20,7 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<?> doLogin(@RequestBody UserRequest userRequest) {
+    public ResponseEntity<?> login(@RequestBody UserRequest userRequest) {
         // 로그인 성공했다고 가정
         UserResponse user = UserResponse.builder()
                 .userId(userRequest.getUserId())
